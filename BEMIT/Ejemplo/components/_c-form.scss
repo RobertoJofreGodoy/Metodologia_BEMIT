@@ -23,6 +23,7 @@
          &--last{
              margin-bottom: 0px;
          }
+
      }
 
      &__label{
@@ -30,11 +31,25 @@
         display: block;
         color: black;
         padding-bottom: 5px;
+
      }
 
      &__input{
         width: 100%;
         margin-top: 10px;
+
+     }
+
+     &__textarea{
+        width: 100%;
+        display: block;
+        background-color: white;
+        padding: 5px 10px;
+        border: 1px solid black;
+        height: 100px;
+        min-height: 100px;
+        max-height: 400px;
+        
      }
  }
 

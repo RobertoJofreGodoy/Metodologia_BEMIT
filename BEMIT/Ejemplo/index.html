@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
-	<body>
+	<body class="js-body">
 		<!-- HEADER -->
 		<div class="c-header">
 			<div class="c-header__col"></div>
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		<!-- FORM -->
-		<div class="c-form">
+		<div class="c-form u-none@md">
 			<div class="c-form__field">
 				<label class="c-form__label o-text-align-right">Name</label>
 				<input type="text" class="c-form__input" />
@@ -76,6 +76,10 @@
 				</div>
 				<div class="c-title-and-content__wrapper-button">
 					<span class="c-title-and-content__button c-button c-button--big js-toggle-modal">yo también abro el Modal</span>
+				</div>
+				<div class="c-title-and-content__wrapper-button">
+					<span class="c-title-and-content__button c-button js-change-theme" data-theme='t-light'>Aplicar tema light</span>
+					<span class="c-title-and-content__button c-button js-change-theme" data-theme='t-dark'>Aplicar tema por defecto</span>
 				</div>
 			</div>
 		</div>

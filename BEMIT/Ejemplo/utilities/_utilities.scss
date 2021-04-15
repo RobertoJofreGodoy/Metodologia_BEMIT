@@ -4,7 +4,13 @@
  */
 
  .u-none{
-    display: none;
+    display: none!important;
+
+    &\@md{
+        @include md{
+            display: none!important;
+        }
+    }
 }
 
 .u-tar{

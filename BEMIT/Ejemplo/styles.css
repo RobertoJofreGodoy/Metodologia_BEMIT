@@ -64,6 +64,10 @@ body {
   background-color: grey;
 }
 
+body.t-light {
+  background-color: honeydew;
+}
+
 /* =====================================================================================================
      END TAGS
  ===================================================================================================== 
@@ -258,6 +262,17 @@ body {
   margin-top: 10px;
 }
 
+.c-form__textarea {
+  width: 100%;
+  display: block;
+  background-color: white;
+  padding: 5px 10px;
+  border: 1px solid black;
+  height: 100px;
+  min-height: 100px;
+  max-height: 400px;
+}
+
 /* =====================================================================================================
    END COMPONENT - FORM
 ===================================================================================================== 
@@ -395,12 +410,112 @@ body {
   padding-bottom: 20px;
 }
 
+.s-debug {
+  /**
+    * Outline all classes
+    */
+  /**
+    * Outline all BEM Elements
+    */
+  /**
+    * Outline all BEM Modifiers
+    */
+  /**
+    * Outline all Object classes
+    */
+  /**
+    * Outline all Components classes
+    */
+  /**
+    * Outline all Utility classes
+    */
+  /**
+    * Outline all State classes
+    */
+  /**
+    * Outline all JS classes
+    */
+  /**
+    * Outline all Theme classes
+    */
+  /**
+    * Outline all Scope classes
+    */
+  /**
+    * Outline all QA classes
+    */
+  /**
+    * Outline all Hacks classes
+    */
+  /**
+    * Outline all Responsive classes
+    */
+}
+
+.s-debug [class] {
+  outline: 3px solid lightgrey;
+}
+
+.s-debug [class*="__"] {
+  outline-color: grey;
+}
+
+.s-debug [class*="--"] {
+  outline-color: #484848;
+}
+
+.s-debug [class^="o-"], .s-debug [class*="o-"] {
+  outline-color: orange;
+}
+
+.s-debug [class^="c-"], .s-debug [class*="c-"] {
+  outline-color: lightseagreen;
+}
+
+.s-debug [class^="u-"], .s-debug [class*="u-"] {
+  outline-color: lightcoral;
+}
+
+.s-debug [class^="is-"], .s-debug [class*="is-"], .s-debug [class^="has-"], .s-debug [class*="has-"] {
+  outline-color: yellow;
+}
+
+.s-debug [class^="js-"], .s-debug [class*="js-"] {
+  outline-color: darkmagenta;
+}
+
+.s-debug [class^="t-"], .s-debug [class*="t-"] {
+  outline-color: darkblue;
+}
+
+.s-debug [class^="s-"], .s-debug [class*="s-"] {
+  outline-color: darkorange;
+}
+
+.s-debug [class^="qa-"], .s-debug [class*="qa-"] {
+  outline-color: lightpink;
+}
+
+.s-debug [class^="_"] {
+  outline-color: red;
+}
+
+.s-debug [class^="@"] {
+  outline-color: greenyellow;
+}
+
 /* =====================================================================================================
     UTILITIES
 =====================================================================================================
  */
 .u-none {
-  display: none;
+  display: none !important;
+}
+
+@media (min-width: 1101px) {
+  .u-none\@md {
+    display: none !important;
+  }
 }
 
 .u-tar {

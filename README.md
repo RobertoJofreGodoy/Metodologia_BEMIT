@@ -402,13 +402,91 @@ js-loader
 - Este tipo de clase no añade estilos en tu CSS.
 - Si utilizas en tu JavaScript una nomenclatura diferente, por ejemplo, CamelCase o cualquier otro método, entonces se puede permitir usar clases como .jsModal si es necesario. Aunque se recomienda que todo se haga en el mismo formato BEMIT.
 
-
-
 #### Prefijo para un tema de estilos determinado: t-
+- Una clase de tema se forma de ña siguiente manera:
+```
+t-theme-name
+```
+Por ejemplo: 
+```
+t-dark
+t-light
+```
+- Una clase de tema es un tipo de clase que modifica estilos aplicados a varias secciones para que sigan la misma temática.
+- Las clases de tema no tienen un archivo específico donde vivir, viven en la clase a la que modifican
+- Las clases de tema, utilizan un selector anidado, por lo que tienen una fuerza de selector mayor que una clase única.
+- Es un tipo de clases que preferiblemente hay que evitar
+
 
 #### Prefijo para contextos y alcance de ámbito (scope): s-
+- Una clase de scope, o también llamda de contexto o alcance de ámbito, se forma de la siguiente manera:
+```
+s-scope-name
+```
+Por ejemplo: 
+```
+s-cms-content
+s-about
+```
+- Una clase de scope es una clase que añade un contexto en alguna sección de tu web para poder tratar de manera especial esa sección.
+- Las ckases de scope en CSS resuelven un problemas muy específicos y particular. Asegurate de que realmente encesitas este recurso antes de utilizar este tipo de clases, ya que pueden utilizarse de forma incorrecta y acabar en un CSS caótico.
+- A veces, puede ser útil añadir un nuevo contexto de estilo para una sección en particular del proyecto. Un ejemplo èrfecto de esto son las áreas de contenido generado por un CMS, es las uqe parde del HTML proviene de un usuario que puede subir contenido en el backend, por ejemplo en Wordpress.
+- Este tipo de clases generan un selector de anidamiento, ganando mucha fuerza de selector. Puede causar muchos problemas, así que es mejor evitarlas.
+- Estas clases no tienen un lugar específico dodne vivir, las podemos añadir en una nueva cpapa llamada "scopes" emtre los componentes y las utilidades.
 
 #### Prefijo para testing de control de calidad: qa-
+- Una clase de control de calidad se forma de la siguiente manera:
+```
+qa-node-name
+```
+Por ejemplo: 
+```
+qa-message-success
+qa-error-login
+```
+- Este tipo de clases es inusual, pero potencialmente útil.
+- Cuando se ejecutan pruebas automatizadas de la interfaz, es una buena práctica separar tus selectores cd CSS de los hooks para dichas pruebas.
+- Este tipo de clase sigue el mismo concepto qwue la clase de hook para Javascript.
+- Usar este tipo de clases nos permite tener separado el estilo de las pruebas de calidad.
+- Si no vas a tener que hacer pruebas automatizadas, no utilices este tipo de clase.
+- Podemos hacer todos los cambios de CSS que necesitemos, siempre y cuando nos aseguremos que el hooj para el control de calidad permanezca en su lugar.
+
 
 #### Prefijo para hacks: _
+
+- Una clase para hacks se forma de la siguiente manera:
+```
+_hack-name
+```
+Por ejemplo: 
+```
+_c-form__input
+```
+- En ciertas circunstancias, generalmente muy raras, es posible que debamos agregar una clas e a nuestro HTML únicamente para ayudarnos a nular o modificar algo temporalmente.
+- Evitar este tipo de clases
+- Si ves una clase con prefijo _, que sepas que es una clase temporal y está modificando algo muy concreto.
+
+### Sufijos
+
+#### Sufijos de responsive: @
+
+- Una clase de responsive, se forma de la siguiente manera:
+```
+class-name@breakpoint
+```
+Por ejemplo: 
+```
+o-text-align-right@xs  <--- este objeto se alineará a la direcha solo en el breakpoint xs
+u-none@md  <--- oculta el nodo en md
+u-none@print  <--- oculta nodos cuando se encuetran en el contexto de impresión
+```
+- Estas clases solo son de ayuda, y son más utiles en objetos y utilidades, NO en componentes, si quieres aplicar responsive a un componente, lo mejor es aplicar la media query directamente en su selector, asi podemos mantener todos los estilos referentes al componente en el mismo lugar.
+
+### ! Debug
+
+- Al tener todos los patrones estrictos y consistentes de BEMIT en nuestro HTML, podemos realizar un debug visual en nuesatra interfaz de usuario.
+- Podríamos resaltar las diferentes clases en función de lo que son.
+- Por supuesto esto solo es orientativo, pero podemos comenzar a obtener una buena instantánea visual de la composición de cualquier página (con metodología BEMIT).
+- Pondremos el código en un archivo de scopes, en _scopes.scss.
+- Cuando se quiera activar el debug, solo hay que agregar al body la clase **s-debug**
 
