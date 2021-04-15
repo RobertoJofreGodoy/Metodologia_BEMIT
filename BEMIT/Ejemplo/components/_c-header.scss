@@ -1,0 +1,46 @@
+/* =====================================================================================================
+    COMPONENT - HEADER
+=====================================================================================================
+ */
+.c-header {
+	width: 100%;
+	display: flex;
+	background-color: lightblue;
+	padding: 20px;
+	outline: 1px solid darkblue;
+    margin-bottom: 40px;
+    
+    &__col {
+        width: 50%;
+        display: block;
+        background-color: lightgreen;
+        padding: 20px;
+        outline: 1px solid darkgreen;
+    }
+    
+    &__menu {
+        width: 100%;
+        display: block;
+        background-color: lightcoral;
+        color: black;
+        padding: 20px;
+        outline: 1px solid darkred;
+    }
+
+    &__menu-link{
+        color: black;
+        display: inline-block;
+        padding-right: 10px;
+        text-decoration: none;
+
+        &--white{
+            color: white;
+        }
+    }
+}
+
+
+/* =====================================================================================================
+   END COMPONENT - HEADER
+===================================================================================================== 
+*/

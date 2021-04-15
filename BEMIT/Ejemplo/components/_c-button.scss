@@ -1,0 +1,58 @@
+/* =====================================================================================================
+    COMPONENT - BUTTON
+=====================================================================================================
+ */
+
+ .c-button{
+
+    width: auto;
+    padding: 4px 16px;
+    color: white;
+    background-color: green;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:hover{
+        background-color: black;
+    }
+
+    &--little{
+        width: auto;
+        padding: 2px 5px;
+        color: white;
+        background-color: yellowgreen;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: black;
+        }
+    }
+
+    &--big{
+        width: auto;
+        padding: 10px 30px;
+        color: white;
+        background-color:blueviolet;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+            background-color: black;
+        }
+
+    }
+ }
+
+/* =====================================================================================================
+   END COMPONENT - BUTTON
+===================================================================================================== 
+*/

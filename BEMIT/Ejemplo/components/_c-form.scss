@@ -1,0 +1,45 @@
+/* =====================================================================================================
+    COMPONENT - FORM
+=====================================================================================================
+ */
+ 
+ .c-form{
+     width: 480px;
+     display: block;
+     background-color: lightblue;
+     padding: 20px;
+     outline: 1px solid darkblue;
+     margin: 0 auto;
+     margin-top: 15px;
+
+     &__field{
+         width: 100%;
+         display: block;
+         background-color: lightgreen;
+         padding: 20px;
+         outline: 1px solid darkgreen;
+         margin-bottom: 20px;
+
+         &--last{
+             margin-bottom: 0px;
+         }
+     }
+
+     &__label{
+        width: 100%;
+        display: block;
+        color: black;
+        padding-bottom: 5px;
+     }
+
+     &__input{
+        width: 100%;
+        margin-top: 10px;
+     }
+ }
+
+
+/* =====================================================================================================
+   END COMPONENT - FORM
+===================================================================================================== 
+*/
