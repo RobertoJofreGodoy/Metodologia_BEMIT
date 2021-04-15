@@ -46,7 +46,7 @@
 			</div>
 
             <div class="c-form__field">
-                <span class="c-form__button c-button c-button--little">Abrir Modal</span>
+                <span class="c-form__button c-button c-button js-toggle-modal">Abrir Modal</span>
             </div>
 
 			<div class="c-form__field c-form__field--last">
@@ -55,13 +55,31 @@
 		</div>
 
         <!-- MODAL -->
-        <div class="c-modal">
+        <div class="c-modal js-modal">
             <div class="c-modal__inner">
                 <h4 class="c-modal__title">Soy un modal</h4>
                 <div class="c-modal__wrapper-button">
-                    <span class="c-modal__button c-button c-button--big">Cerrar Modal</span>
+                    <span class="c-modal__button c-button c-button--big js-toggle-modal">Cerrar Modal</span>
                 </div>
             </div>
         </div>
+
+		<!-- C TITLE AND CONTENT -->
+		<div class="c-title-and-content">
+			<div class="c-title-and-content__inner">
+				<h2 class="c-title-and-content__title">Soy un titulo</h2>
+				<p class="c-title-and-content__content">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quo dicta rem! Dignissimos, veniam nisi sint omnis accusamus assumenda eligendi libero in iusto deserunt qui nesciunt porro suscipit dolores dolorum?
+				</p>
+				<div class="c-title-and-content__wrapper-button">
+					<span class="c-title-and-content__button c-button c-button">Soy un botón</span>
+				</div>
+				<div class="c-title-and-content__wrapper-button">
+					<span class="c-title-and-content__button c-button c-button--big js-toggle-modal">yo también abro el Modal</span>
+				</div>
+			</div>
+		</div>
+
+		<script src="./script.js"></script>
 	</body>
 </html>

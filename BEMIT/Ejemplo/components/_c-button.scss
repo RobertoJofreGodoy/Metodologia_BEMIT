@@ -6,34 +6,19 @@
  .c-button{
 
     width: auto;
-    padding: 4px 16px;
+    padding: 2px 5px;
     color: white;
-    background-color: green;
+    background-color: yellowgreen;
     display: inline-block;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+
 
     &:hover{
         background-color: black;
-    }
-
-    &--little{
-        width: auto;
-        padding: 2px 5px;
-        color: white;
-        background-color: yellowgreen;
-        display: inline-block;
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
-        font-size: 14px;
-        line-height: 17px;
-        text-transform: uppercase;
-
-        &:hover{
-            background-color: black;
-        }
     }
 
     &--big{

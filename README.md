@@ -385,6 +385,24 @@ has-children
 - Los estados pueden cambiar de un momento a otro, en función de kas acciones del usuario.
 
 #### Prefijo para referenciar un nodo que interactúa con JavaScript: js-
+- Una clase de hook para JavaScript se forma de la siguiente manera:
+```
+js-name
+```
+Por ejemplo: 
+```
+js-tab-button
+js-loader
+```
+- La idea es prefijar clases para atacar con JavaScript es separar nuestro código, para no tener estilos y comportamiento vinculados al mismo selector.
+- Unir ambas tecnologías en el mismo selector significa que no podemos tener una sin la otra.
+- Dicja separación rd uns buena práctica de desarrollo frontend a tener en cuenta.
+- Es una forma muy legible y muy obvia de entender de un vistazo rápido que ese nodo del html con clases de prefijo js- tiene un evento o comportamiento específico asociado en tu JavaScript.
+- Tener ese prefijo significa trabajar de forma mucho más segura.
+- Este tipo de clase no añade estilos en tu CSS.
+- Si utilizas en tu JavaScript una nomenclatura diferente, por ejemplo, CamelCase o cualquier otro método, entonces se puede permitir usar clases como .jsModal si es necesario. Aunque se recomienda que todo se haga en el mismo formato BEMIT.
+
+
 
 #### Prefijo para un tema de estilos determinado: t-
 
